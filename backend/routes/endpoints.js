@@ -2,6 +2,7 @@ var express = require("express");
 var path = require('path');
 var api = express.Router();
 var { permiso } = require('@middleware/permiso');
+require('@routes/autenticacion.js')(api, permiso);
 //require('@routes/articulo.js')(api, permiso);
 
 
